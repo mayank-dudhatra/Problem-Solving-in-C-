@@ -45,3 +45,28 @@ int main() {
 
     return 0;
 }
+
+// Third Method
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+string yearcheck(int year) {
+    bool isCenturian = (year % 100 == 0);
+    if (isCenturian) {
+        return "It is a Centurian Year.";
+    } else {
+        return "It is not a Centurian Year.";
+    }
+}
+
+int main() {
+    int year;
+    cout << "Enter the Year: ";
+    cin >> year;
+
+    cout << yearcheck(year) << endl;
+
+    return 0;
+}
